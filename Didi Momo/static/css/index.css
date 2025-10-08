@@ -7,11 +7,13 @@
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('../../resources/main_bg.png') no-repeat center center fixed;
+    /* Fallback color para ver se o CSS carrega */
+    background-color: white;
+    
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/static/images/main_bg.png');
     background-size: cover;
-    color: white;
-    line-height: 1.6;
 }
 
 /* Header e Navegação */
@@ -71,6 +73,7 @@ nav {
 }
 
 .hero h2 {
+    color: white;
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -79,6 +82,7 @@ nav {
 }
 
 .hero h1 {
+    color: white;
     font-size: 72px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -87,6 +91,7 @@ nav {
 }
 
 .hero p {
+    color: white;
     max-width: 600px;
     font-size: 16px;
     margin-bottom: 30px;
