@@ -4,7 +4,7 @@ class Router:
     app = Flask(
             import_name = __name__,
             static_folder = '../static',
-            template_folder = '../templates'  
+            template_folder = '../templates'  # change templates dir path
         )
 
     @app.route('/')
@@ -14,4 +14,5 @@ class Router:
     @staticmethod
     def start(debug: bool = False):
         return Router.app.run(debug=debug)
+
 
