@@ -9,28 +9,25 @@
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">Austrália</a>
-            <ul class="nav-links">
-                <li><a href="#">INÍCIO</a></li>
-                <li><a href="#">ESTUDO</a></li>
-                <li><a href="#">EMPREGO</a></li>
-                <li><a href="#">TURISMO</a></li>
-                <li><a href="#">SOBRE</a></li>
-            </ul>
+            <a href="#" class="logo" style="display: none;">Austrália</a>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h2>DISCOVER THE COLORFUL WORLD</h2>
-            <h1>NEW ADVENTURE</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore moghe aliqua. Ut enim od minim.</p>
+            <h2>COMEÇE SUA JORNADA DE SUCESSO HOJE MESMO</h2>
+            <h1>NO PAÍS DOS KOALAS E OPORTUNIDADES</h1>
+            <p>Uma nação, milhares de caminhos - encontre o seu!</p>
+            
+            <div class="button-container">
+                <button class="nav-button" onclick="redirectToStudy()">ESTUDO</button>
+                <button class="nav-button" onclick="redirectToJob()">EMPREGO</button>
+                <button class="nav-button" onclick="redirectToTourism()">TURISMO</button>
+                <button class="nav-button" onclick="redirectToAbout()">SOBRE</button>
+            </div>
         </section>
     </main>
 
-    <!-- Scripts JavaScript -->
-    <script src="{{ url_for('static', filename='js/router.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/navigation.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="../static/js/navigation.js"></script>
 </body>
 </html>

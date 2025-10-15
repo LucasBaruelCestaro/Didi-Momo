@@ -1,5 +1,93 @@
-<section class="hero">
-    <h2>EMPREGOS NA AUSTRÁLIA</h2>
-    <h1>OPORTUNIDADES PROFISSIONAIS</h1>
-    <p>Vagas de emprego, mercado de trabalho e requisitos.</p>
-</section>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala Guide - Empregos em TI</title>
+    <link rel="stylesheet" href="../static/css/job.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo" onclick="redirectToHome()">Austrália</a>
+            <ul class="nav-links">
+                <li><a href="#" onclick="redirectToHome()">INÍCIO</a></li>
+                <li><a href="#" onclick="redirectToStudy()">ESTUDO</a></li>
+                <li><a href="#" onclick="redirectToJob()">EMPREGO</a></li>
+                <li><a href="#" onclick="redirectToTourism()">TURISMO</a></li>
+                <li><a href="#" onclick="redirectToAbout()">SOBRE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>MERCADO DE TRABALHO NA AUSTRÁLIA</h2>
+            <h1>EMPREGOS EM TECNOLOGIA</h1>
+            <p>Descubra as oportunidades na área de TI e transforme sua carreira</p>
+            
+            <div class="job-content">
+                <div class="job-info">
+                    <h3>💼 Dados do Mercado de TI na Austrália</h3>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h4>🚀 Crescimento Anual</h4>
+                            <p class="stat-number">8.2%</p>
+                            <p>Taxa de crescimento do setor de TI</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <h4>💰 Salário Médio</h4>
+                            <p class="stat-number">A$ 95.000</p>
+                            <p>Por ano para desenvolvedores</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <h4>📈 Vagas Abertas</h4>
+                            <p class="stat-number">15.000+</p>
+                            <p>Posições em tecnologia disponíveis</p>
+                        </div>
+                    </div>
+
+                    <div class="job-details">
+                        <h4>🎯 Áreas em Alta Demanda:</h4>
+                        <ul>
+                            <li><strong>Desenvolvimento de Software:</strong> A$ 85.000 - A$ 120.000</li>
+                            <li><strong>Cybersecurity:</strong> A$ 95.000 - A$ 130.000</li>
+                            <li><strong>Data Science:</strong> A$ 90.000 - A$ 125.000</li>
+                            <li><strong>Cloud Computing:</strong> A$ 100.000 - A$ 140.000</li>
+                            <li><strong>DevOps:</strong> A$ 105.000 - A$ 135.000</li>
+                        </ul>
+                    </div>
+
+                    <div class="graph-placeholder">
+                        <h4>📊 Empregabilidade por Estado (TI)</h4>
+                        <div class="graph">
+                            <div class="bar" style="height: 90%;" data-value="90%">NSW</div>
+                            <div class="bar" style="height: 85%;" data-value="85%">VIC</div>
+                            <div class="bar" style="height: 75%;" data-value="75%">QLD</div>
+                            <div class="bar" style="height: 70%;" data-value="70%">WA</div>
+                            <div class="bar" style="height: 65%;" data-value="65%">SA</div>
+                        </div>
+                    </div>
+
+                    <div class="source-link">
+                        <p><strong>Fonte:</strong> 
+                            <a href="https://www.seek.com.au/career-advice/role/software-developer/salary" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                               Seek Australia - Salários em TI
+                            </a>
+                        </p>
+                    </div>
+
+                    <a href="https://www.seek.com.au/ict-jobs" class="btn" target="_blank">Ver Vagas</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../static/js/navigation.js"></script>
+</body>
+</html>
