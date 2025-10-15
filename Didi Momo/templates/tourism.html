@@ -1,5 +1,132 @@
-<section class="hero">
-    <h2>TURISMO NA AUSTRÁLIA</h2>
-    <h1>EXPLORE BELEZAS NATURAIS</h1>
-    <p>Pontos turísticos, praias, cidades e aventuras.</p>
-</section>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koala Guide - Turismo</title>
+    <link rel="stylesheet" href="../static/css/tourism.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo" onclick="redirectToHome()">Austrália</a>
+        <ul class="nav-links">
+          <li><a href="#" onclick="redirectToHome()">INÍCIO</a></li>
+          <li><a href="#" onclick="redirectToStudy()">ESTUDO</a></li>
+          <li><a href="#" onclick="redirectToJob()">EMPREGO</a></li>
+          <li><a href="#" onclick="redirectToTourism()">TURISMO</a></li>
+          <li><a href="#" onclick="redirectToAbout()">SOBRE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>EXPLORE AS MARAVILHAS</h2>
+        <h1>TURISMO NA AUSTRÁLIA</h1>
+        <p>Descubra paisagens incríveis e experiências únicas</p>
+
+        <div class="tourism-container">
+          <aside class="sidebar left-sidebar">
+            <div class="image-container">
+              <img
+                src="../static/images/gbr.png"
+                alt="Great Barrier Reef"
+                class="tour-image"
+              />
+              <div class="image-caption">
+                Great Barrier Reef<br />Maior sistema de corais do mundo
+              </div>
+            </div>
+          </aside>
+
+          <div class="tourism-content">
+            <div class="tourism-info">
+              <h3>🌏 Melhores Destinos Australianos</h3>
+
+              <div class="destinations-grid">
+                <div class="destination-card">
+                  <h4>Sydney Opera House</h4>
+                  <p class="price">Ingressos: A$ 40 - A$ 150</p>
+                  <p class="best-time">Melhor época: Setembro - Novembro</p>
+                  <p class="description">
+                    Icone arquitetônico com tours guiados e espetáculos.
+                  </p>
+                </div>
+
+                <div class="destination-card">
+                  <h4>Great Barrier Reef</h4>
+                  <p class="price">Snorkeling: A$ 80 - A$ 200</p>
+                  <p class="best-time">Melhor época: Junho - Outubro</p>
+                  <p class="description">
+                    Maior sistema de corais do mundo, ideal para mergulho.
+                  </p>
+                </div>
+
+                <div class="destination-card">
+                  <h4>Uluru (Ayers Rock)</h4>
+                  <p class="price">Parque Nacional: A$ 25</p>
+                  <p class="best-time">Melhor época: Maio - Setembro</p>
+                  <p class="description">
+                    Formação rochosa sagrada no deserto australiano.
+                  </p>
+                </div>
+
+                <div class="destination-card">
+                  <h4>Great Ocean Road</h4>
+                  <p class="price">Passeio: A$ 100 - A$ 250</p>
+                  <p class="best-time">Melhor época: Dezembro - Fevereiro</p>
+                  <p class="description">
+                    Estrada cênica com os Doze Apóstolos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="travel-tips">
+                <h4>✈️ Dicas de Viagem</h4>
+                <ul>
+                  <li>
+                    <strong>Visto:</strong> ETA australiano necessário para
+                    brasileiros
+                  </li>
+                  <li><strong>Moeda:</strong> Dólar australiano (AUD)</li>
+                  <li><strong>Idioma:</strong> Inglês</li>
+                  <li>
+                    <strong>Clima:</strong> Variado - verifique a região
+                    específica
+                  </li>
+                  <li>
+                    <strong>Transporte:</strong> Ótima rede de transportes
+                    públicos
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="https://www.australia.com/pt-br"
+                class="btn"
+                target="_blank"
+                >Planeje Sua Viagem</a
+              >
+            </div>
+          </div>
+
+          <aside class="sidebar right-sidebar">
+            <div class="image-container">
+              <img
+                src="../static/images/soh.png"
+                alt="Sydney Opera House"
+                class="tour-image"
+              />
+              <div class="image-caption">
+                Sydney Opera House<br />Ícone arquitetônico mundial
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="../static/js/navigation.js"></script>
+  </body>
+</html>

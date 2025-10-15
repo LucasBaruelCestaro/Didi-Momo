@@ -1,0 +1,175 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo principal da página */
+body {
+    /* Fallback color para ver se o CSS carrega */
+    background-color: white;
+    
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/main_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header e Navegação */
+header {
+    padding: 20px 5%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f9a826; /* Cor de destaque baseada na imagem */
+}
+
+/* Seção Hero - MESMO ESTILO DO INDEX */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    color: white;
+    max-width: 600px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.study-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.study-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin-top: 0px;
+}
+
+.study-info h3 {
+    color: #f9a826;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.study-info ul {
+    color: white;
+    list-style: none;
+    text-align: left;
+}
+
+.study-info li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f9a826;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #e0971f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Menu hamburguer seria implementado posteriormente */
+    }
+    
+    .hero h1 {
+        font-size: 48px;
+    }
+    
+    .hero h2 {
+        font-size: 18px;
+    }
+    
+    .hero p {
+        font-size: 20px;
+    }
+    
+    .study-info {
+        padding: 20px;
+    }
+}
