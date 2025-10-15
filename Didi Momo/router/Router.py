@@ -3,7 +3,7 @@ from flask import Flask, render_template, redirect
 class Router:
     app = Flask(
             import_name = __name__,
-            static_folder = '../static',
+            static_folder = '../static', # change static dir path
             template_folder = '../templates'  # change templates dir path
         )
 
@@ -14,5 +14,6 @@ class Router:
     @staticmethod
     def start(debug: bool = False):
         return Router.app.run(debug=debug)
+
 
 
